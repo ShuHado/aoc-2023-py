@@ -13,6 +13,8 @@ for i in range(len(input)):
         elif input[i][j] == "\n":
             output.append(word)
             word = ""
+if word:
+    output.append(word)
 
 for i in range(len(output)):
     if len(output[i]) == 1:
@@ -21,6 +23,7 @@ for i in range(len(output)):
         pass
     elif len(output[i]) > 2:
         output[i] = output[i][0] + output[i][-1]
+
 
 def run():
     total = 0
