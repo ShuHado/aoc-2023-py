@@ -16,7 +16,6 @@ def run():
         line = line.split(":")
         line[0] = line[0].split(" ")
         line[1] = line[1].split(";")
-        print(line)
         isPossible = True
         for set in line[1]:
             set = set.split(",")
