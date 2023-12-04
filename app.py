@@ -5,7 +5,14 @@ parser = argparse.ArgumentParser(
     description="Run the program corresponding to the day who is passed as argument",
 )
 
-parser.add_argument("-d", "--day", type=int, help="Day of the challenge", required=True)
+parser.add_argument(
+    "-d",
+    "--day",
+    type=int,
+    help="Day of the challenge",
+    required=True,
+    choices=range(1, 26),
+)
 parser.add_argument(
     "-p",
     "--part",
