@@ -1,4 +1,5 @@
 import argparse
+import importlib
 
 parser = argparse.ArgumentParser(
     prog="python app.py",
@@ -24,7 +25,9 @@ parser.add_argument(
 
 args = parser.parse_args()
 
-if args.part == "a":
-    exec(open(f"day-{args.day}/challenge-a.py").read())
-elif args.part == "b":
-    exec(open(f"day-{args.day}/challenge-b.py").read())
+resultA = importlib.import_module(f"day-{args.day}.challenge-a").run()
+resultB = importlib.import_module(f"day-{args.day}.challenge-b").run()
+
+print(f"Day {args.day} \u2744\uFE0F")
+print(f"Challenge A \U0001F385 : {resultA}")
+print(f"Challenge A \U0001F385 : {resultB}")
