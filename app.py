@@ -14,14 +14,6 @@ parser.add_argument(
     required=True,
     choices=range(1, 26),
 )
-parser.add_argument(
-    "-p",
-    "--part",
-    type=str,
-    help="Part of the challenge",
-    required=True,
-    choices=["a", "b"],
-)
 
 args = parser.parse_args()
 
