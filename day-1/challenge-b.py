@@ -38,11 +38,8 @@ def calibrationValue(line):
     return int(str(first) + str(last))
 
 
-def run(input):
+def run():
     total = 0
     for line in input:
         total += calibrationValue(line)
-    print(f"Challenge B \U0001F385 : {total}")
-
-
-run(input)
+    return total

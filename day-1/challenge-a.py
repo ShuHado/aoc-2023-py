@@ -22,8 +22,8 @@ for i in range(len(output)):
     elif len(output[i]) > 2:
         output[i] = output[i][0] + output[i][-1]
 
-total = 0
-for i in range(len(output)):
-    total += int(output[i])
-
-print(f"Challenge A \U0001F385 : {total}")
+def run():
+    total = 0
+    for i in range(len(output)):
+        total += int(output[i])
+    return total
