@@ -9,11 +9,11 @@ Note: this project uses Python 3.10, so you may need to install it in order to r
 To run for day 1 part A
 
 ```bash
-python app.js -d 1 -p A
+python app.py -d 1 -p A
 ```
 
 To run for day 1 part B
 
 ```bash
-python app.js -d 1 -p B
+python app.py -d 1 -p B
 ```
