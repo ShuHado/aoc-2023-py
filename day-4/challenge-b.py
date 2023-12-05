@@ -32,6 +32,3 @@ def run():
     for card in cards:
         total += cards[card]
     return total
-
-
-print("Total : ", run())
